@@ -30,6 +30,11 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
+            Button("John Fitzgerald Kennedy") {
+                print("Button Tapped")
+            }
+            .accessibilityInputLabels(["John Fitzgerald Kennedy", "Kennedy", "JFK"])
+            
             Button {
                 selectedPicture = Int.random(in: 0...3)
             } label: {
